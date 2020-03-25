@@ -4,6 +4,7 @@
 }
 
 body {
+
     background-image: url('../img/retangulo.png');
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
@@ -31,21 +32,26 @@ h2 {
 }
 
 .sobre-conteudo__img {
-    margin-top: 80px;
-}  
-    
+   
+    margin-top: 0;
+  width: 100%;
+   max-width: 200px;
+    text align: center;
+}
 .sobre-conteudo {
     font-family: 'Lato', sans-serif;
     text-align: center;
+    
 }
 
 .sobre-conteudo__redes-sociais {
     text-align: center;
     margin-top: 100px;
-    padding-bottom: 90px;
+    padding-bottom: 40px;
 }
 
 .sobre-conteudo__redes-sociais img {
+    text-align: center;
     width: 87px;
     height: 86px;
     margin-left: 40px;
@@ -53,3 +59,27 @@ h2 {
 
 
 
+/* Media Query */
+/* 300px - 370px */
+@media (max-width: 370px) and (min-width: 300px) {
+    .sobre-conteudo__img {
+    width: 160px;
+    }
+    }
+    
+    /* 0 - 300px */
+    @media (max-width: 300px) {
+    .sobre-conteudo__img {
+    width: 130px;
+    }
+    }
+    
+    /*
+    max: até
+    min: a partir de
+    */
+    
+    /*
+    max-width: 700px - até 700px
+    min-width: 250px - a partir de 250px
+    */ 

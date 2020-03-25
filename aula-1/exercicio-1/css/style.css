@@ -49,13 +49,14 @@ p {
 }
 
 .section-sobre {
-   width: 960px;
+    
+  max-width: 960px;
    margin: 0 auto; /* macete para deixar elementos block centralizados */
    margin-top: 100px;
 }
 
 .sobre-conteudo__botoes {
-    text-align: right; /* esse tipo de alinhamento para botões não funciona se for colocado diretamente no elemento <a>. Deve-se colocar essa propriedade no elemento mãe */
+    text-align: center; /* esse tipo de alinhamento para botões não funciona se for colocado diretamente no elemento <a>. Deve-se colocar essa propriedade no elemento mãe */
 }
 
 .btn {
@@ -72,4 +73,25 @@ p {
     color: #5d1277;
     border: 1px solid #5d1277; /* cria uma borda no elemento. Ordem de valores: grossura-da-borda tipo-da-borda cor-da-borda. */
 }
+@media screen and (max-width:800px) {
+    .sobre-conteudo, .sobre-imagem {
+        width: 100%;
+    }
+h1, h2, p {
+    text-align: center;
+}
 
+p{
+max-width: 100%;
+margin: 0 auto 110px auto;
+}
+
+.sobre-conteudo_botoes {
+    text-align: center;
+}
+img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+}
